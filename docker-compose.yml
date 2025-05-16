@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: ai
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      OPENAI_API_KEY: "${OPENAI_API_KEY}"
+      PERSONAL_API_KEY: "${PERSONAL_API_KEY}"
